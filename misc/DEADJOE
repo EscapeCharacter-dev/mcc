@@ -1,0 +1,33 @@
+
+*** These modified files were found in JOE when it aborted on Sat Oct 31 13:37:39 2020
+*** JOE was aborted by UNIX signal 1
+
+*** File 'test.txt'
+33 * 44 / if + 11 ++ 33 % 5 += 3 -= 6 & TestingIdents
+55555544444 || && & | &= |= ! != 88884 eax register _ ee
+*** File '(Unnamed)'
+exit
+x
+
+*** File '(Unnamed)'
+ee
+ee
+
+*** File '(Unnamed)'
+lex.c
+lex.c
+lex.c
+test.txt
+test.txt
+test.txt
+test.txt
+test.txt
+test.txt
+test.txt
+test.txt
+
+*** File '* Startup Log *'
+Processing '/etc/joe/joerc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/joerc

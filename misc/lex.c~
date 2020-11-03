@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "lex.h"
+
+void Tokenize(char *const FilePath, Token *TokenBuffer) {
+    if (!FilePath)
+        return;
+    if (!TokenBuffer) {
+        TokenBuffer = (Token*) malloc(sizeof(Token) * (512 * 1024));
+        if (!TokenBuffer) return;
+    }
+}
