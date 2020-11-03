@@ -1,5 +1,7 @@
 # Magic C Compiler 🧙
 The Magic C Compiler, not really magic.
+## Where's the code?
+It's in the branch `master`.
 ## About
 The Magic C Compiler (mcc) is a handwritten C compiler (no bison, etc.)  
 It targets the following architectures:  
