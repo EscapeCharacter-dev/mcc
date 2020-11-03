@@ -68,8 +68,9 @@ int Tokenize(char *const FilePath, Token *TokenBuffer)
     while ((c = fgetc(file)) != EOF)
     {
         //tokenizing char by char
-        
+
         __label__ skipDefinit;
+        __label__ eof; // skipping for weird vscode error
 
         if (charpos == size)
             break;
@@ -375,6 +376,11 @@ skipDefInit:
         TokenBuffer[tokenpos++] = t;
 
         charpos++;
+
+        continue;
+//in case we got an EOF
+eof:
+        break;
     }
 
     TokenBuffer = (Token*) realloc(TokenBuffer, sizeof(Token) * (tokenpos + 1));
@@ -388,6 +394,4 @@ int main(int argc, char **argv)
 {
     Token *tokenbuf = (Token*) calloc(512 * 1024, sizeof(Token));
     Tokenize(argv[1], tokenbuf);
-    ParseTree *tree = (ParseTree*) calloc(1, sizeof(ParseTree));
-    Parse(tokenbuf, tree);
 }
