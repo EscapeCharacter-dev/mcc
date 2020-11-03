@@ -12,7 +12,7 @@ It targets the following architectures:
 It is written to support all platforms (Linux, Windows, BSD, Darwin (MacOS), Popcorn, ...)  
 None of them is currently supported. 😥
 ## Why another compiler
-Writting compilers is fun.
+Writing compilers is fun.
 ## Building?
 Building the compiler is pretty easy, you need a linker, a C compiler.  
 Then type in (depending on the architecture):  
